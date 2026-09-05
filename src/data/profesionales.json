@@ -1,0 +1,182 @@
+[
+  {
+    "medicoId": 1,
+    "nombre": "María González",
+    "especialidad": "Clínica Médica",
+    "activo": true
+  },
+  {
+    "medicoId": 2,
+    "nombre": "Juan Martínez",
+    "especialidad": "Cardiología",
+    "activo": true
+  },
+  {
+    "medicoId": 3,
+    "nombre": "Laura Rodríguez",
+    "especialidad": "Dermatología",
+    "activo": true
+  },
+  {
+    "medicoId": 4,
+    "nombre": "Carlos Fernández",
+    "especialidad": "Pediatría",
+    "activo": true
+  },
+  {
+    "medicoId": 5,
+    "nombre": "Sofía López",
+    "especialidad": "Ginecología",
+    "activo": true
+  },
+  {
+    "medicoId": 6,
+    "nombre": "Diego Sánchez",
+    "especialidad": "Traumatología",
+    "activo": true
+  },
+  {
+    "medicoId": 7,
+    "nombre": "Valentina Romero",
+    "especialidad": "Oftalmología",
+    "activo": true
+  },
+  {
+    "medicoId": 8,
+    "nombre": "Martín Torres",
+    "especialidad": "Neurología",
+    "activo": true
+  },
+  {
+    "medicoId": 9,
+    "nombre": "Camila Díaz",
+    "especialidad": "Psiquiatría",
+    "activo": true
+  },
+  {
+    "medicoId": 10,
+    "nombre": "Federico Álvarez",
+    "especialidad": "Urología",
+    "activo": true
+  },
+  {
+    "medicoId": 11,
+    "nombre": "Lucía Moreno",
+    "especialidad": "Endocrinología",
+    "activo": true
+  },
+  {
+    "medicoId": 12,
+    "nombre": "Andrés Ruiz",
+    "especialidad": "Gastroenterología",
+    "activo": true
+  },
+  {
+    "medicoId": 13,
+    "nombre": "Natalia Vargas",
+    "especialidad": "Neumonología",
+    "activo": true
+  },
+  {
+    "medicoId": 14,
+    "nombre": "Sebastián Castro",
+    "especialidad": "Nefrología",
+    "activo": true
+  },
+  {
+    "medicoId": 15,
+    "nombre": "Carolina Ortiz",
+    "especialidad": "Oncología",
+    "activo": true
+  },
+  {
+    "medicoId": 16,
+    "nombre": "Gabriel Medina",
+    "especialidad": "Reumatología",
+    "activo": true
+  },
+  {
+    "medicoId": 17,
+    "nombre": "Paula Herrera",
+    "especialidad": "Infectología",
+    "activo": true
+  },
+  {
+    "medicoId": 18,
+    "nombre": "Nicolás Rojas",
+    "especialidad": "Hematología",
+    "activo": true
+  },
+  {
+    "medicoId": 19,
+    "nombre": "Florencia Molina",
+    "especialidad": "Cirugía General",
+    "activo": true
+  },
+  {
+    "medicoId": 20,
+    "nombre": "Ricardo Silva",
+    "especialidad": "Obstetricia",
+    "activo": true
+  },
+  {
+    "medicoId": 21,
+    "nombre": "Daniela Acosta",
+    "especialidad": "Psicología",
+    "activo": true
+  },
+  {
+    "medicoId": 22,
+    "nombre": "Pablo Navarro",
+    "especialidad": "Otorrinolaringología",
+    "activo": true
+  },
+  {
+    "medicoId": 23,
+    "nombre": "Julieta Cabrera",
+    "especialidad": "Clínica Médica",
+    "activo": true
+  },
+  {
+    "medicoId": 24,
+    "nombre": "Hernán Peralta",
+    "especialidad": "Cardiología",
+    "activo": false
+  },
+  {
+    "medicoId": 25,
+    "nombre": "Agustina Vega",
+    "especialidad": "Pediatría",
+    "activo": true
+  },
+  {
+    "medicoId": 26,
+    "nombre": "Mariano Benítez",
+    "especialidad": "Dermatología",
+    "activo": true
+  },
+  {
+    "medicoId": 27,
+    "nombre": "Verónica Paredes",
+    "especialidad": "Ginecología",
+    "activo": false
+  },
+  {
+    "medicoId": 28,
+    "nombre": "Leonardo Giménez",
+    "especialidad": "Traumatología",
+    "activo": true
+  },
+  {
+    "medicoId": 29,
+    "nombre": "Florencia Suárez",
+    "especialidad": "Neurología",
+    "activo": true
+  },
+  {
+    "medicoId": 30,
+    "nombre": "Alejandro Domínguez",
+    "especialidad": "Cirugía General",
+    "activo": true
+  }
+]

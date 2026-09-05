@@ -1,0 +1,112 @@
+[
+  {
+    "especialidadId": 1,
+    "nombreEspecialidad": "Clínica Médica",
+    "activa": true
+  },
+  {
+    "especialidadId": 2,
+    "nombreEspecialidad": "Cardiología",
+    "activa": true
+  },
+  {
+    "especialidadId": 3,
+    "nombreEspecialidad": "Dermatología",
+    "activa": true
+  },
+  {
+    "especialidadId": 4,
+    "nombreEspecialidad": "Pediatría",
+    "activa": true
+  },
+  {
+    "especialidadId": 5,
+    "nombreEspecialidad": "Ginecología",
+    "activa": true
+  },
+  {
+    "especialidadId": 6,
+    "nombreEspecialidad": "Obstetricia",
+    "activa": true
+  },
+  {
+    "especialidadId": 7,
+    "nombreEspecialidad": "Traumatología",
+    "activa": true
+  },
+  {
+    "especialidadId": 8,
+    "nombreEspecialidad": "Oftalmología",
+    "activa": true
+  },
+  {
+    "especialidadId": 9,
+    "nombreEspecialidad": "Otorrinolaringología",
+    "activa": true
+  },
+  {
+    "especialidadId": 10,
+    "nombreEspecialidad": "Neurología",
+    "activa": true
+  },
+  {
+    "especialidadId": 11,
+    "nombreEspecialidad": "Psiquiatría",
+    "activa": true
+  },
+  {
+    "especialidadId": 12,
+    "nombreEspecialidad": "Psicología",
+    "activa": true
+  },
+  {
+    "especialidadId": 13,
+    "nombreEspecialidad": "Urología",
+    "activa": true
+  },
+  {
+    "especialidadId": 14,
+    "nombreEspecialidad": "Endocrinología",
+    "activa": true
+  },
+  {
+    "especialidadId": 15,
+    "nombreEspecialidad": "Gastroenterología",
+    "activa": true
+  },
+  {
+    "especialidadId": 16,
+    "nombreEspecialidad": "Neumonología",
+    "activa": true
+  },
+  {
+    "especialidadId": 17,
+    "nombreEspecialidad": "Nefrología",
+    "activa": true
+  },
+  {
+    "especialidadId": 18,
+    "nombreEspecialidad": "Oncología",
+    "activa": true
+  },
+  {
+    "especialidadId": 19,
+    "nombreEspecialidad": "Reumatología",
+    "activa": true
+  },
+  {
+    "especialidadId": 20,
+    "nombreEspecialidad": "Infectología",
+    "activa": true
+  },
+  {
+    "especialidadId": 21,
+    "nombreEspecialidad": "Hematología",
+    "activa": true
+  },
+  {
+    "especialidadId": 22,
+    "nombreEspecialidad": "Cirugía General",
+    "activa": true
+  }
+]
