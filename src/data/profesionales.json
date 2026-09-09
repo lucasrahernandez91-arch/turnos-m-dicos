@@ -178,5 +178,11 @@
     "nombre": "Alejandro Domínguez",
     "especialidad": "Cirugía General",
     "activo": true
+  },
+  {
+    "medicoId": 31,
+    "nombre": "Mariana López",
+    "especialidad": "Pediatría",
+    "activo": true
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1788969734953",
+    "medicoId": 1,
+    "paciente": "Lucas Rossi",
+    "documento": "35123456",
+    "fecha": "15/09/2026",
+    "especialidad": "Clínica Médica"
+  },
+  {
+    "id": "1788969738141",
+    "medicoId": 1,
+    "paciente": "Lucas Rossi",
+    "documento": "35123456",
+    "fecha": "15/09/2026",
+    "especialidad": "Clínica Médica"
+  }
+]

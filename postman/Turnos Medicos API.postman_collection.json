@@ -1,0 +1,230 @@
+{
+  "info": {
+    "_postman_id": "26c1c8a2-5796-436d-90ee-7ebbb9f53c00",
+    "name": "Turnos Medicos API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57814119"
+  },
+  "item": [
+    {
+      "name": "Validación de lista",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 201 Created\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "var jsonData = pm.response.json();\r",
+              "if (jsonData.id) {\r",
+              "    // Guarda el ID devuelto en una variable de entorno para usarlo después\r",
+              "    pm.environment.set(\"appointmentId\", jsonData.id);\r",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"medicoId\": 1,\r\n  \"paciente\": \"Lucas Rossi\",\r\n  \"documento\": \"35123456\",\r\n  \"fecha\": \"15/09/2026\",\r\n  \"especialidad\": \"Clínica Médica\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/turnos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "turnos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Turno",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 200 OK\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"La respuesta devuelve una lista de médicos\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData).to.be.an('array');\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/medicos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "medicos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Probar Error 400 de Zod",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 400 Bad Request por fallo de validación\", function () {\r",
+              "    pm.response.to.have.status(400);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Estructura de error VALIDATION_ERROR\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.code).to.eql(\"VALIDATION_ERROR\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/turnos",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "turnos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Probar Error 404",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 404 Not Found\", function () {\r",
+              "    pm.response.to.have.status(404);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/mediso",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "mediso"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar Turno",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 204 No Content\", function () {\r",
+              "    pm.response.to.have.status(204);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/turnos/{{appointmentId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "turnos",
+            "{{appointmentId}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
