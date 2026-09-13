@@ -23,7 +23,7 @@ const writeAppointments = async (appointments: Appointment[]): Promise<void> => 
 export const getAllAppointments = async (filters: {
   especialidad?: string;
   fecha?: string;
-  medicoId?: string;
+  medicoId?: number;
 }): Promise<Appointment[]> => {
   let appointments = await readAppointments();
 

@@ -7,7 +7,7 @@ export const getAppointments = async (req: Request, res: Response, next: NextFun
     const appointments = await appointmentService.getAllAppointments({
       especialidad: especialidad as string,
       fecha: fecha as string,
-      medicoId: medicoId as string,
+      medicoId: medicoId ? Number(medicoId) : undefined,
     });
     res.status(200).json(appointments);
   } catch (error) {
