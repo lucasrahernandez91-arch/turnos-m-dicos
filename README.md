@@ -4,6 +4,18 @@ API REST para la gestión de profesionales, especialidades y turnos médicos.
 
 Proyecto desarrollado como parte de la materia Integraciones Web, utilizando Node.js, TypeScript y Express, con persistencia de datos mediante archivos JSON.
 
+## Actividad 2 — Controllers y manejo de errores
+
+Los endpoints se organizan por entidad en controllers asíncronos. Cada controller valida los datos antes de invocar el servicio, usa respuestas con retorno anticipado y devuelve códigos HTTP coherentes para los caminos exitosos y de error.
+
+- \`GET /\`: bienvenida de la API.
+- \`GET|POST|PUT|DELETE /profesionales\`: gestión de profesionales.
+- \`GET|POST|DELETE /especialidades\`: gestión de especialidades.
+- \`GET|POST|PUT|DELETE /turnos\`: gestión de turnos.
+- Cualquier ruta no registrada responde \`404 ROUTE_NOT_FOUND\`.
+
+Las validaciones de datos inválidos responden \`400 VALIDATION_ERROR\` y los recursos inexistentes responden \`404\` con un código específico. La colección de Postman incluida permite registrar las evidencias de los escenarios correctos y de error.
+
 ------------------------------------------------------------------------------------
 
 Tecnologías Utilizadas
