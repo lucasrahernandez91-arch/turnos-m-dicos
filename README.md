@@ -77,15 +77,30 @@ turnos-medicos/
 |  |-Turnos-API-Local.postman_environment.json
 |
 |__src/
-|  |_data/ 
-|  |  |_profesionales.json
-|  |  |_especialidades.json
-|  |  |_turnos.json
-|  |
 |  |_controllers/
 |  |  |_doctorController.ts
 |  |  |_appointmentController.ts
 |  |  |_specialtyRoutes.ts
+|  |  |_generalController.ts 
+|  |
+|  |_data/ 
+|  |  |_profesionales.json
+|  |  |_especialidades.json
+|  |  |_turnos.json
+|  |  |_resources.ts
+|  |
+|  |_errors/
+|  |  |_appError.ts
+|  |
+|  |_middlewares/ 
+|  |  |_notFound.ts
+|  |  |_errorHandler.ts
+|  |  |_validateSchema.ts
+|  |
+|  |_models/
+|  |  |_appointment.ts
+|  |  |_doctor.ts
+|  |  |_specialty.ts 
 |  |
 |  |_routes/
 |  |  |_doctorRoutes.ts
@@ -93,20 +108,18 @@ turnos-medicos/
 |  |  |_specialtyRoutes.ts
 |  |
 |  |_schemas/
-|  |  |...
+|  |  |_appointmentService.ts
+|  |  |_doctorSchema.ts
 |  | 
 |  |_services/
-|  |  |...
-|  |
-|  | 
-|  |_middlewares/ 
-|  |  |_notFound.ts
-|  |  |_errorHandler.ts
+|  |  |_appointmentService.ts
+|  |  |_doctorService.ts
+|  |  |_specialtyService.ts
 |  |
 |  |_index.ts
 | 
-|__dist/
 |__.gitignore
+|__paciente-turnos.md
 |__package.json
 |__package-lock.json
 |__README.md
@@ -320,6 +333,11 @@ Cuando la operación se realiza correctamente, la API responde:
 204 No Content
 
 ------------------------------------------------------------------------------------
+- POST `/api/pacientes`: Registrar un nuevo paciente (DNI, nombre, apellido, fechaNacimiento, teléfono, email). Responde `201 Created`.
+- GET `/api/pacientes`: Listar pacientes registrados.
+- POST `/api/turnos`: Asignar un turno médico relacionando `pacienteId` y `medicoId`. Responde `201 Created`.
+- GET `/api/turnos`: Consultar turnos asignados.
+-------------------------------------------------------------------------------------------
 
 PARÁMETROS DE CONSULTA
 
@@ -523,6 +541,15 @@ Actualmente la API cuenta con:
 * Repositorio GitHub.
 
 ------------------------------------------------------------------------------------
+Pacientes y Turnos (Mockup)
+*(Para más detalles técnicos, consultar el documento `pacientes-turnos.md`)*
+
+- POST `/api/pacientes`**: Registrar un nuevo paciente (DNI, nombre, apellido, fechaNacimiento, teléfono, email). Responde `201 Created`.
+- GET `/api/pacientes`**: Listar pacientes registrados.
+- POST `/api/turnos`**: Asignar un turno médico relacionando `pacienteId` y `medicoId`. Responde `201 Created`.
+- GET `/api/turnos`**: Consultar turnos asignados.
+-------------------------------------------------------------------------------------
+
 AUTOR
 
 Lucas Hernández
